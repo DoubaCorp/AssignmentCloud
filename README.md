@@ -8,7 +8,7 @@ Here we use the dataset of imdb-dataset-of-50k-movie-reviews for our different i
   and save your best model in ONNX format and its dedicated preprocessing transformations
   (i.e., using transformers API) in pickle format.
 
-  Here are a screen of mlflow dashboard to illustrate it:
+  Here is a screen of mlflow dashboard to illustrate it:
   
    ![](images/dev1.PNG)
 
@@ -28,7 +28,7 @@ Here we use the dataset of imdb-dataset-of-50k-movie-reviews for our different i
       - EXPOSE 80
       - CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
       
-    Here are a screen of our model as a container:
+    Here are screens of our model as a container:
   
     ![](images/dev45.PNG)
   
@@ -40,10 +40,26 @@ Here we use the dataset of imdb-dataset-of-50k-movie-reviews for our different i
 
 # Using Flask
 
-We create a dedicated application to consume your API with the run of app.py and we obtain this:
+We create a dedicated application to consume your API with the run of appflask.py and we obtain this:
 
 ![](images/dev7.PNG)
 
+After we create it we package your application as a container using Docker. The contents of our dockerfile :
+
+      - FROM python:3.9-slim-buster 
+      - WORKDIR /app
+      - COPY . /app
+      - RUN pip install -r requirements.txt
+      - EXPOSE 5000
+      - CMD ["python", "appflask.py"]
+
+Here are screens of our application as a container:
+
+ ![](images/dev8.PNG) 
+
+ ![](images/dev9.PNG)
+
+ 
 
 
 
