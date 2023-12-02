@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/BADOU/Desktop/Devoir/mlruns/820465077760961818/ad591b14dd034ca2a522ba7dc4ee1eb7/artifacts
+end_time: 1701266258280
+entry_point_name: ''
+experiment_id: '820465077760961818'
+lifecycle_stage: active
+run_id: ad591b14dd034ca2a522ba7dc4ee1eb7
+run_name: Naive Bayes
+run_uuid: ad591b14dd034ca2a522ba7dc4ee1eb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701266254415
+status: 3
+tags: []
+user_id: BADOU

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>IMDB Prediction</title>
+
+<style>
+        html{
+            overflow: hidden;
+        }
+
+        body{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #login-form-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #score {
+
+            color: red;
+            font-weight: 400;
+            margin-left: 31%;
+            text-align: center;
+            padding: 1%;
+            width: 35%;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login-form-container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="card" style="width: 400px">
+            <div class="card-content">
+                <div class="media">
+                <div class="is-size-4 has-text-centered"> IMDB sentiment analysis Prediction </div>
+                </div>
+                <div class="content">
+
+                <div class="field">
+                    <p class="control">
+                         Review : <br>
+                         <textarea id="first1" name="review" placeholder="Texte" required="required" rows="4" cols="50"></textarea>
+                    </p>
+
+                </div>
+
+
+                <div class="field">
+                    <button class="button is-fullwidth is-rounded is-success">Submit</button>
+                </div>
+                </div>
+            </div>
+        </form>
+
+             {% if review %}
+
+             <p><strong>Sentiment:</strong> {{ sentiment }}</p>
+             {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

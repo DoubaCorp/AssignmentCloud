@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/BADOU/Desktop/Devoir/mlruns/820465077760961818/81419316901b452ebd755d6421149f35/artifacts
+deleted_time: 1701266492116
+end_time: 1701266215973
+entry_point_name: ''
+experiment_id: '820465077760961818'
+lifecycle_stage: deleted
+run_id: 81419316901b452ebd755d6421149f35
+run_name: Logistic Regression
+run_uuid: 81419316901b452ebd755d6421149f35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701266205311
+status: 4
+tags: []
+user_id: BADOU

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/BADOU/Desktop/Devoir/mlruns/820465077760961818/33eeac7959934277a991c9374f3e3a1d/artifacts
+end_time: 1701266287942
+entry_point_name: ''
+experiment_id: '820465077760961818'
+lifecycle_stage: active
+run_id: 33eeac7959934277a991c9374f3e3a1d
+run_name: Random Forest
+run_uuid: 33eeac7959934277a991c9374f3e3a1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701266275177
+status: 3
+tags: []
+user_id: BADOU
