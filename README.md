@@ -34,6 +34,9 @@ After this, we package your model as a container using Docker as a container run
 
   ![](images/dev5.PNG)
 
+We consume your created APIs using Postman ! 
+
+![](images/dev3.PNG)
 
 
 
