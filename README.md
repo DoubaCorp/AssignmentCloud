@@ -28,11 +28,11 @@ Here we use the dataset of imdb-dataset-of-50k-movie-reviews for our different i
       - EXPOSE 80
       - CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
       
-    Here are screens of our model as a container:
+  Here are screens of our model as a container:
   
-    ![](images/dev45.PNG)
+  ![](images/dev45.PNG)
   
-    ![](images/dev5.PNG)
+  ![](images/dev5.PNG)
   
   We consume your created APIs using Postman ! 
 
@@ -55,11 +55,11 @@ After we create it we package your application as a container using Docker. The 
 
 Here are screens of our application as a container:
 
- ![](images/dev8.PNG) 
+![](images/dev8.PNG) 
 
- ![](images/dev9.PNG)
+![](images/dev9.PNG)
 
- ![](images/dev11.PNG)
+![](images/dev11.PNG)
 
  
 
